@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:subtitleTextColor="@android:color/white"
+            app:title="Expense"
+            app:titleTextColor="@android:color/white">
+
+
+            <ImageView
+                android:layout_marginEnd="10dp"
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:backgroundTint="@android:color/white"
+                android:background="@drawable/ic_exit_to_app_black_24dp" />
+
+            <ImageView
+                android:layout_marginEnd="10dp"
+                android:id="@+id/cashinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:backgroundTint="@android:color/white"
+                android:background="@drawable/ic_account_balance_wallet_black_24dp" />
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/loan_tv_il7"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="match_parent"
+            app:boxStrokeColor="@color/colorAccent"
+            app:boxStrokeWidth="2dp">
+
+            <EditText
+                android:id="@+id/edittxt_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:hint="Item Name"
+                android:inputType="textCapWords"
+                android:padding="10dp"
+                android:textSize="15sp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/loan_tv_il8"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="match_parent"
+            app:boxStrokeColor="@color/colorAccent"
+            app:boxStrokeWidth="2dp">
+
+            <EditText
+                android:id="@+id/edittxt_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_below="@id/edittxt_1"
+                android:hint="Rupee"
+                android:textSize="15sp"
+                android:layout_marginTop="2dp"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/loan_tv_il9"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="match_parent"
+            app:boxStrokeColor="@color/colorAccent"
+            app:boxStrokeWidth="2dp">
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@id/edittxt_2"
+                android:hint="Location(Optional)"
+                android:inputType="textCapWords"            />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_record"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/location"
+            android:text="Add"
+            android:clickable="true"
+            android:layout_margin="5dp"
+
+            android:background="@drawable/round_button"
+            android:textColor="@android:color/white"
+            />
+
+        <Button
+            android:id="@+id/show_record"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+
+            android:layout_below="@id/add_record"
+            android:text="Show"
+            android:clickable="true"
+            android:background="@drawable/round_button"
+            android:textColor="@android:color/white"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

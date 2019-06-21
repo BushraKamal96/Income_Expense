@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_color"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/loginnlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:padding="10dp"
+            android:text="Income Expense"
+            android:textColor="#fff"
+            android:textSize="40sp" />
+
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="225dp"
+            android:hint="Phone no."
+            android:textCursorDrawable="@drawable/underline_color"
+            android:backgroundTint="#fff"
+            android:textColorHint="#fff"
+            android:inputType="number"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/number"
+            android:layout_alignStart="@+id/number"
+            android:layout_alignLeft="@+id/number"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            android:backgroundTint="#fff"
+            android:textColorHint="#fff"
+            android:inputType="numberPassword"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+
+            android:textSize="16sp" />
+
+
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_btn"
+            android:clickable="true"
+            android:text="LOGIN"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/testing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="16dp"
+            android:layout_centerHorizontal="true"
+            android:text="Dont have an account?"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

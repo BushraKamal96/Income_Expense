@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.acer.incomeexpense">
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/icons8_payment_history_96"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SigninActivity" />
+        <activity android:name=".Records" />
+        <activity android:name=".DailyRecord" />
+        <activity android:name=".LoanActivity" />
+
+        <service android:name=".Service.ReminderService" />
+        <service android:name=".Service.LoanService" />
+
+        <receiver android:name=".BroadcastService">
+            <intent-filter>
+                <action android:name="com.myaction.com" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".DailyAlarm">
+            <intent-filter>
+                <action android:name="com.myaction.com" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".IncomeActivity" />
+        <activity android:name=".DueDate" />
+        <activity android:name=".UserInfo"></activity>
+    </application>
+
+</manifest>
